@@ -1,0 +1,7 @@
+public/*
+!public/index.html
+node_modules/*
+npm-debug.log
+.idea/*
+bower_components/
+npm-debug.log.26aec2e437324b5d9960accdb968de72
