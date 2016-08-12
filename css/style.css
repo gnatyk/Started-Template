@@ -1,2 +1,76 @@
-a {
-  text-decoration: none; }
+@font-face {
+  font-family: Asap-Regular;
+  src: url("../fonts/asap/Asap-Regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+p {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+
+.content_wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: auto; }
+
+.welcomeScreen {
+  background-image: url("../img/1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .welcomeScreen .content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .welcomeScreen header {
+    padding-top: 80px; }
+    .welcomeScreen header .left .logoWrap {
+      display: flex;
+      align-items: center;
+      color: #fff; }
+      .welcomeScreen header .left .logoWrap p {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-style: italic;
+        font-family: Asap-Regular;
+        text-transform: uppercase; }
+        .welcomeScreen header .left .logoWrap p span {
+          font-style: normal;
+          font-size: 0.9rem;
+          letter-spacing: .9px;
+          color: rgba(255, 255, 255, 0.6); }
+    .welcomeScreen header ul {
+      box-shadow: -6px -6px 0px 0px rgba(245, 197, 6, 0.5), -3px -3px 0px 0px rgba(245, 197, 6, 0.7);
+      background-color: #f5c506;
+      display: flex;
+      justify-content: space-between; }
+      .welcomeScreen header ul li {
+        padding: 5px 25px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .welcomeScreen header ul li:nth-child(1) {
+          border-right: 1px solid rgba(0, 0, 0, 0.1); }
+        .welcomeScreen header ul li i {
+          margin-right: 10px;
+          font-size: 20px; }
+  .welcomeScreen .welcomeContent {
+    padding: 50px  0; }
+    .welcomeScreen .welcomeContent .content_wrapper h1 {
+      font-family: Asap-Regular;
+      margin: 0 auto;
+      color: #f5c506;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 4.8rem; }
+    .welcomeScreen .welcomeContent .content_wrapper span {
+      color: white; }
+    .welcomeScreen .welcomeContent .content_wrapper img {
+      max-width: 450px; }

@@ -1,3 +1,112 @@
-a {
-	text-decoration: none;
+// common styles
+@font-face {
+	font-family: Asap-Regular;
+	src: url("../fonts/asap/Asap-Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+$yellow:#f5c506;
+$white:#fff;
+$h1:3rem;
+$logoFont:Asap-Regular;
+p{
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
+}
+.content_wrapper {
+	max-width:900px;
+	width: 100%;
+	margin: auto; 
+}
+
+
+.welcomeScreen {
+	background-image: url("../img/1.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	.content_wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+	header {
+		padding-top: 80px;
+
+		.left {
+			.logoWrap {
+				display: flex;
+				align-items:center;
+				color: $white;
+				p {
+					text-transform: uppercase;
+					font-size:$h1;
+					font-style: italic;
+					font-family: $logoFont;
+					text-transform: uppercase;
+					  span {
+						font-style: normal;
+						font-size: $h1*.3;
+						letter-spacing: .9px;
+						color:rgba(255,255,255,.6);
+					}
+				}
+			}
+		}
+		ul {
+		    box-shadow: -6px -6px 0px 0px rgba(245,197,6,0.5),
+						-3px -3px 0px 0px rgba(245,197,6,0.7);
+			background-color: $yellow;
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				 padding: 5px 25px;
+				 text-transform: uppercase;
+				 color: rgba(0,0,0,.4);
+				 display: flex;
+				 align-items: center;
+				 justify-content: center;
+				 &:nth-child(1){
+					 border-right:1px solid rgba(0,0,0,.1);
+				 }
+				 i {
+					 margin-right: 10px;
+					 font-size: 20px;
+				 }
+
+				 
+			}
+		}
+	
+	}
+		.welcomeContent {
+			padding: 50px  0 ;
+
+			.content_wrapper{
+				h1{
+					font-family: $logoFont;
+					margin: 0 auto;
+					color: $yellow;
+					text-align: center;
+					text-transform: uppercase;
+					font-size: $h1*1.6;
+				}
+				span{
+					color: white;	
+				}
+				img {
+					max-width: 450px;
+
+				}
+			}
+
+		}
 }
