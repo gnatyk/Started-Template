@@ -16,6 +16,12 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: SegoeWP;
+  src: url("../fonts/SegoeWP/SegoeWPN.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
 p {
   margin: 0; }
 
@@ -27,6 +33,10 @@ ul {
   max-width: 900px;
   width: 100%;
   margin: auto; }
+
+.orange {
+  background-color: #ec9e03;
+  padding: 20px; }
 
 .welcome-Screen {
   background-image: url("../img/1.png");
@@ -82,7 +92,7 @@ ul {
       text-transform: uppercase;
       font-size: 4.8rem; }
     .welcome-Screen .welcome-Content .content-Wrapper span {
-      color: white; }
+      color: #fff; }
     .welcome-Screen .welcome-Content .content-Wrapper img {
       max-width: 450px; }
 
@@ -118,14 +128,31 @@ ul {
   background-position: center;
   background-repeat: no-repeat; }
   .gallery .content-Wrapper {
+    padding-top: 30px;
     display: flex;
-    padding-bottom: 100px; }
-    .gallery .content-Wrapper .imag1 img {
-      margin-top: 30px;
-      max-width: 500px; }
-    .gallery .content-Wrapper .imag2 img {
-      margin: 80px 0px 0px 40px;
-      max-width: 250px; }
+    justify-content: flex-start; }
+    .gallery .content-Wrapper .text-gallery {
+      font-size: 23px;
+      font-family: ptSans;
+      color: white;
+      text-transform: uppercase; }
+  .gallery .content-Wrapper {
+    display: flex;
+    justify-content: flex-start; }
+    .gallery .content-Wrapper .left {
+      display: flex; }
+      .gallery .content-Wrapper .left .orange .orange-text {
+        font-size: 19px;
+        font-family: SegoeWP;
+        color: rgba(255, 255, 255, 0.6); }
+      .gallery .content-Wrapper .left .video img {
+        max-width: 250px; }
+    .gallery .content-Wrapper .right .orange {
+      margin-left: 30px; }
+      .gallery .content-Wrapper .right .orange i {
+        font-size: 145px;
+        color: #c18000;
+        padding: 0 30px; }
 
 .instructions {
   background-image: url("../img/5.png");

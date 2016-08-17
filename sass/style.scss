@@ -17,10 +17,17 @@
 	font-style: normal;
 	font-weight: normal;
 }
-
+@font-face{
+	font-family:SegoeWP;
+	src: url("../fonts/SegoeWP/SegoeWPN.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+$orange:#ec9e03;
 $yellow:#f5c506;
 $white:#fff;
 $h1:3rem;
+$font-orange:SegoeWP;
 $logoFont:Asap-Regular;
 $font-Icon:myriad;
 $font-Instructions:ptSans;
@@ -36,6 +43,10 @@ ul {
 	max-width:900px;
 	width: 100%;
 	margin: auto; 
+}
+.orange {
+	background-color:$orange;
+	padding: 20px; 
 }
 .welcome-Screen {
 	background-image: url("../img/1.png");
@@ -105,7 +116,7 @@ ul {
 			font-size: $h1*1.6;
 		}
 		span{
-			color: white;	
+			color:$white;	
 		}
 		img {
 			max-width: 450px;
@@ -154,23 +165,50 @@ ul {
 	background-position: center;
 	background-repeat: no-repeat;
 	.content-Wrapper {
+		padding-top: 30px;
+		display: flex;
+	    justify-content: flex-start;
+		.text-gallery {
+			font-size: 23px;
+			font-family: $font-Instructions;
+			color: white;
+			text-transform: uppercase;
+		}
+	}
+	.content-Wrapper {
+		display:flex;
+		justify-content: flex-start;
+		.left {
 			display:flex;
-			padding-bottom: 100px;
-
-			.imag1 {
-				img{
-					margin-top: 30px;			
-					max-width: 500px;
-				}
-			}			
-			.imag2 {
-				img {
-					margin:80px 0px 0px 40px;
-					max-width: 250px;
+			.orange {
+				.orange-text {
+					font-size: 19px;
+					font-family: $font-orange;
+					color: rgba(255, 255, 255,.6);
 				}
 			}
+			.video {
+				img{
+					max-width: 250px;
+				}				
+			}
+		}
+		.right{
+			.orange{
+				margin-left: 30px;
+				i {
+					font-size: 145px;
+					color : #c18000;
+					padding: 0 30px;
+				}
+
+			}
+
+		}
+	
 	}
 }
+
 .instructions {
 	background-image: url("../img/5.png");
 	background-size: cover;
@@ -199,8 +237,7 @@ ul {
 					max-width: 60px;
 				}
 			}
-		}
-			
+		}			
 			.right {
 				margin-left: 100px;
 			margin-top:50px;
