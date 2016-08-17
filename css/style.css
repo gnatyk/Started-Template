@@ -10,14 +10,18 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: ptSans;
+  src: url("../fonts/pt-sans/pt-sans.regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
 p {
   margin: 0; }
 
 ul {
   margin: 0;
   padding: 0; }
-  ul li {
-    list-style-type: none; }
 
 .content-Wrapper {
   max-width: 900px;
@@ -56,6 +60,7 @@ ul {
       display: flex;
       justify-content: space-between; }
       .welcome-Screen header ul li {
+        list-style-type: none;
         padding: 5px 25px;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.4);
@@ -87,6 +92,7 @@ ul {
     display: flex;
     justify-content: flex-start; }
     .icon-Area .content-Wrapper ul li {
+      list-style-type: none;
       border-left: 1px solid rgba(0, 0, 0, 0.1);
       display: flex;
       flex-direction: column;
@@ -118,5 +124,38 @@ ul {
       margin-top: 30px;
       max-width: 500px; }
     .gallery .content-Wrapper .imag2 img {
-      margin: 80px 0px 0px 20px;
+      margin: 80px 0px 0px 40px;
       max-width: 250px; }
+
+.instructions {
+  background-image: url("../img/5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .instructions .title-Text {
+    margin-top: 20px;
+    font-family: ptSans;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: #f5c506; }
+  .instructions .content-Wrapper {
+    display: flex; }
+    .instructions .content-Wrapper .left {
+      margin-top: 30px; }
+      .instructions .content-Wrapper .left img {
+        margin-right: 20px; }
+        .instructions .content-Wrapper .left img:first-child {
+          max-width: 250px; }
+        .instructions .content-Wrapper .left img:nth-child(2) {
+          max-width: 100px; }
+        .instructions .content-Wrapper .left img:last-child {
+          max-width: 60px; }
+    .instructions .content-Wrapper .right {
+      margin-left: 100px;
+      margin-top: 50px; }
+      .instructions .content-Wrapper .right li {
+        margin-bottom: 10px;
+        color: #f5c506; }
+        .instructions .content-Wrapper .right li span {
+          color: rgba(245, 245, 245, 0.6);
+          font-size: 1.2rem; }
