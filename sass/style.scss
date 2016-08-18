@@ -46,7 +46,6 @@ ul {
 }
 .orange {
 	background-color:$orange;
-	padding: 20px; 
 }
 .welcome-Screen {
 	background-image: url("../img/1.png");
@@ -121,23 +120,23 @@ ul {
 		img {
 			max-width: 450px;
 		}
-	}
-}	
+	 }
+   }	
 }
 
 .icon-Area {	
 	background-color: rgba(245,245,245,.6);
-	.content-Wrapper {	
+	.content-icons {
 		ul {
 			display: flex;
-			justify-content: flex-start;
 			li {
+				padding: 30px 0;	
+				display: flex;
+				flex-direction: column;
+				flex: 1 1 auto;
+				text-align: center;
 				list-style-type: none;
 				border-left:1px solid rgba(0,0,0,.1);
-				display:flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
 				&:nth-child(n+2){
 					background-color: rgba(245,245,245,.6);
 				 }
@@ -145,6 +144,7 @@ ul {
 					 border-right: 1px solid rgba(0,0,0,.1);
 				 }
 				 i {
+					 padding-bottom: 10px;
 					 color:$yellow;	
 					 font-size: 70px;
 				 }	
@@ -164,64 +164,90 @@ ul {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	.content-Wrapper {
-		padding-top: 30px;
-		display: flex;
-	    justify-content: flex-start;
-		.text-gallery {
-			font-size: 23px;
-			font-family: $font-Instructions;
-			color: white;
-			text-transform: uppercase;
-		}
-	}
-	.content-Wrapper {
-		display:flex;
-		justify-content: flex-start;
-		.left {
-			display:flex;
-			.orange {
-				.orange-text {
-					font-size: 19px;
-					font-family: $font-orange;
-					color: rgba(255, 255, 255,.6);
+		.gallery-wrapper {
+			.title {
+				padding: 30px 0;
+				.text-gallery {
+					font-size: 23px;
+					font-family: $font-Instructions;
+					color: white;
+					text-transform: uppercase;
+					}
+				}
+			.video-info {
+				display: flex;
+				justify-content: space-between;
+				align-items: stretch;
+				flex-direction: row;
+				.plus {
+					font-size: 18px;
+					color:rgba(255,255,255 ,.6);
+					position: absolute;
+					bottom: 20px;
+					right: 20px;
+				}
+				.left {
+					display:flex;
+					.orange {
+						display: flex;
+						align-items: center;
+						padding: 0 45px;
+						position:relative;
+						.orange-text {							
+							font-size: 20px;
+							font-family: $font-orange;
+							color: rgba(255, 255, 255,.6);
+							}
+						}
+					.video {
+						img{
+							max-width: 300px;
+						}				
+					}	
+				}	
+				.right {
+					display: flex;
+					align-items: center;
+					.orange{
+						padding: 0 45px;
+						height:100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position:relative;
+						.tw-tw {
+							position: absolute;
+							top: 20px;
+							right:20px;
+							font-size: 20px;
+							color:rgba(255,255,255 ,.6);
+						}
+						i {
+							font-size: 145px;
+							color : #c18000;
+							padding: 0 30px;
+						}
+					}
 				}
 			}
-			.video {
-				img{
-					max-width: 250px;
-				}				
-			}
 		}
-		.right{
-			.orange{
-				margin-left: 30px;
-				i {
-					font-size: 145px;
-					color : #c18000;
-					padding: 0 30px;
-				}
-
-			}
-
-		}
-	
 	}
-}
-
 .instructions {
 	background-image: url("../img/5.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	.instructions-wrapper {
+		display: flex;
+		flex-direction: column;
 	.title-Text{
-		margin-top: 20px;
+		margin-top: 18px;
 		font-family: $font-Instructions;
 		text-transform: uppercase;
 		font-size: $h1*0.8;
 		color:$yellow;			
 	}
-	.content-Wrapper {
+	.instructions-content {
 		display: flex;
 		.left {	
 			margin-top:30px;
@@ -238,20 +264,45 @@ ul {
 				}
 			}
 		}			
-			.right {
-				margin-left: 100px;
+		.right {
+			margin-left: 100px;
 			margin-top:50px;
-				li {
-					margin-bottom: 10px;
-					color: $yellow;
-				span{
-					color: rgba(245,245,245,.6);
-					font-size: $h1*0.4;
-					}
+			li {
+				margin-bottom: 10px;
+				color: $yellow;
+			span{
+				color: rgba(245,245,245,.6);
+				font-size: $h1*0.4;
 				}
-			}
-	}
+			 }
+		  }
+	   }
+    }
 }
+@media screen and (max-width:768px) {
+	.gallery{
 
+	}
+	.gallery{
+		.gallery-wrapper{
+			 .video-info {
+				 flex-direction:column;
+				 .left {
+					 .orange{
+						 flex: 1 1 auto;
+					 }
+					 .video {
+						  flex: 1 1 auto;
+					 }
+
+					 				 }
+			 }
+		}
+	}
+
+
+
+
+}
 
 
