@@ -107,8 +107,6 @@ ul {
       text-align: center;
       list-style-type: none;
       border-left: 1px solid rgba(0, 0, 0, 0.1); }
-      .icon-Area .content-icons ul li:nth-child(n+2) {
-        background-color: rgba(245, 245, 245, 0.6); }
       .icon-Area .content-icons ul li:nth-last-child(1) {
         border-right: 1px solid rgba(0, 0, 0, 0.1); }
       .icon-Area .content-icons ul li i {
@@ -138,7 +136,8 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-direction: row; }
+    flex-direction: row;
+    padding-bottom: 150px; }
     .gallery .gallery-wrapper .video-info .plus {
       font-size: 18px;
       color: rgba(255, 255, 255, 0.6);
@@ -216,9 +215,94 @@ ul {
             font-size: 1.2rem; }
 
 @media screen and (max-width: 768px) {
-  .gallery .gallery-wrapper .video-info {
-    flex-direction: column; }
-    .gallery .gallery-wrapper .video-info .left .orange {
-      flex: 1 1 auto; }
-    .gallery .gallery-wrapper .video-info .left .video {
-      flex: 1 1 auto; } }
+  .content-Wrapper {
+    max-width: 95vw; }
+  .welcome-Screen header {
+    padding: 0; }
+    .welcome-Screen header .content-Wrapper {
+      max-width: 100vw;
+      align-items: stretch; }
+      .welcome-Screen header .content-Wrapper .left {
+        width: 25%;
+        background-color: #595959; }
+        .welcome-Screen header .content-Wrapper .left .logo-Wrap {
+          padding: 15px 0;
+          justify-content: center; }
+          .welcome-Screen header .content-Wrapper .left .logo-Wrap p {
+            font-size: 1.8rem; }
+            .welcome-Screen header .content-Wrapper .left .logo-Wrap p span {
+              display: none; }
+          .welcome-Screen header .content-Wrapper .left .logo-Wrap img {
+            margin-right: 10px; }
+      .welcome-Screen header .content-Wrapper .right {
+        width: 75%;
+        box-shadow: none; }
+        .welcome-Screen header .content-Wrapper .right li {
+          padding: 0;
+          font-size: 1.8rem;
+          width: 33%; }
+          .welcome-Screen header .content-Wrapper .right li:not(:last-child) {
+            border-right: 1px solid rgba(0, 0, 0, 0.1); }
+  .welcome-Screen .welcome-Content {
+    padding: 0; }
+    .welcome-Screen .welcome-Content .content-Wrapper {
+      max-width: 100vw; }
+      .welcome-Screen .welcome-Content .content-Wrapper img {
+        width: 100%;
+        max-width: 100%; }
+      .welcome-Screen .welcome-Content .content-Wrapper h1 {
+        display: none; }
+  .icon-Area {
+    background-image: url("../img/mob-nav-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto; }
+    .icon-Area .content-Wrapper {
+      max-width: 100vw; }
+      .icon-Area .content-Wrapper ul li {
+        border-left: 0; }
+  .gallery {
+    background-image: none; }
+    .gallery .content-Wrapper {
+      max-width: 100vw; }
+    .gallery .gallery-wrapper .title {
+      display: none; }
+    .gallery .gallery-wrapper .video-info {
+      flex-direction: column;
+      padding: 0; }
+      .gallery .gallery-wrapper .video-info .left {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px; }
+        .gallery .gallery-wrapper .video-info .left .orange {
+          margin-right: 10px; }
+        .gallery .gallery-wrapper .video-info .left .video {
+          margin-left: 10px; }
+      .gallery .gallery-wrapper .video-info .right .orange {
+        padding: 40px 0;
+        margin-top: 10px;
+        width: 100%;
+        background-color: #f5c506; }
+        .gallery .gallery-wrapper .video-info .right .orange i {
+          font-size: 20.7rem; }
+        .gallery .gallery-wrapper .video-info .right .orange span {
+          display: none; }
+  .instructions .instructions-wrapper {
+    align-items: center; }
+    .instructions .instructions-wrapper .title-Text {
+      font-size: 4.8rem; }
+    .instructions .instructions-wrapper .instructions-content {
+      flex-direction: column; }
+      .instructions .instructions-wrapper .instructions-content .left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end; }
+        .instructions .instructions-wrapper .instructions-content .left img:first-child {
+          max-width: 350px; }
+        .instructions .instructions-wrapper .instructions-content .left img:nth-child(2) {
+          padding-bottom: 40px;
+          max-width: 170px; }
+        .instructions .instructions-wrapper .instructions-content .left img:last-child {
+          padding-bottom: 40px;
+          max-width: 100px; }
+      .instructions .instructions-wrapper .instructions-content .right {
+        display: none; } }
